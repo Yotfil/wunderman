@@ -1,0 +1,18 @@
+@import './_variables'
+@import './_mixins'
+
+*
+    @include format-document
+html, body
+    font-family: $font-family
+    color: $white-color
+    scroll-behavior: smooth
+    scroll-snap-type: y mandatory
+    overflow-x: hidden
+
+.btnPaginador
+    color: $white-color
+    background-color: $primary-color
+    padding: 10px
+    margin: 0 10px
+    cursor: pointer

@@ -1,0 +1,49 @@
+<section class="marcas">
+  <div class="marcas--contenedor">
+    <h3 class="marcas--title">¿Cómo esto ayuda a las marcas?</h3>
+    <p class="marcas--text">
+      Esta visión nos ayuda a transformar el journey:
+    </p>
+    <div class="marcas--images">
+      <div class="container-image">
+        <img src="assets/reconocer.svg" alt="" class="container-image--pic">
+        <h4 class="container-image--sub-title">Reconocer</h4>
+        <p class="container-image--text">Reconocer nuevos desencadenantes.</p>
+      </div>
+      <div class="container-image">
+        <img src="assets/repensar.svg" alt="" class="container-image--pic">
+        <h4 class="container-image--sub-title">Repensar</h4>
+        <p class="container-image--text">Repensar puntos de contacto.</p>
+      </div>
+      <div class="container-image">
+        <img src="assets/reconsiderar.svg" alt="" class="container-image--pic">
+        <h4 class="container-image--sub-title">Reconsiderar</h4>
+        <p class="container-image--text">Reconsiderar puntos de dolor.</p>
+      </div>
+      <div class="container-image">
+        <img src="assets/reequilibrar.svg" alt="" class="container-image--pic">
+        <h4 class="container-image--sub-title">Reequilibrar</h4>
+        <p class="container-image--text">Reequilibrar la emoción.</p>
+      </div>
+      <div class="container-image">
+        <img src="assets/reimaginar.svg" alt="" class="container-image--pic">
+        <h4 class="container-image--sub-title">Reimaginar</h4>
+        <p class="container-image--text">Reimaginar escenarios.</p>
+      </div>
+    </div>
+    <img src="assets/texture-white.svg" alt="" class="marcas--texture">
+  </div>
+  <div class="usuarios">
+    <h3 class="usuarios--title">Usuarios</h3>
+    <div class="usuarios--contenedor">
+      <div *ngFor="let usuario of usuariosEncontrados" class="usuarios--usuario">
+        <img src='{{usuario.avatar}}' alt="">
+        <p> {{usuario.first_name}} </p>
+        <p> {{usuario.last_name}} </p>
+        <p> {{usuario.email}} </p>
+      </div>
+    </div>
+  </div>
+  <div id="paginador" class="paginador">
+  </div>
+</section>

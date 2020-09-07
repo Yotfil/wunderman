@@ -1,0 +1,55 @@
+@import '~src/sass/variables'
+
+@mixin format-document
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    list-style: none
+    object-fit: contain
+
+@mixin centrar-contenedor
+    max-width: $max-width
+    margin: auto
+
+@mixin contenedor
+    width: $sizing-100
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    align-items: center
+
+@mixin botones
+    text-decoration: none
+    text-align: center
+    background-color: $secondary-color
+    padding: 10px 25px
+
+@mixin title
+    font-size: 42px
+    margin-bottom: 30px
+    @media screen and ( min-width: 560px )
+        font-size: 52px
+        margin-bottom: 60px
+    @media screen and ( min-width: 769px )
+        font-size: 72px
+        margin-bottom: 40px
+
+@mixin parrafos
+    font-size: 14px
+    font-weight: 300
+    line-height: 1.4
+    letter-spacing: .4px
+    margin-bottom: 40px
+    width: 80%
+    @media screen and ( min-width: 560px )
+        font-size: 16px
+    @media screen and ( min-width: 769px )
+        width: 40%
+        margin-bottom: 50px
+        font-size: 16px
+
+@mixin subtitle
+    margin: 10px 0
+    font-size: 18px
+    letter-spacing: .4px
+    text-align: center

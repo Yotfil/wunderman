@@ -1,0 +1,106 @@
+@import '~src/sass/variables'
+@import '~src/sass/_mixins'
+
+.marcas
+    background-color: $secondary-color
+    padding-bottom: 50px
+    &--text
+        text-align: center
+        @include parrafos
+
+    &--contenedor
+        padding-top: 100px
+        width: $sizing-70
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        position: relative
+        @include centrar-contenedor
+
+    &--title
+        color: $white-color
+        text-align: center
+        @include title
+    &--images
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        justify-content: center
+    &--texture
+        width: 30%
+        position: absolute
+        bottom: -70px
+        left: -50px
+
+.container-image
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    padding: 20px
+    &--pic
+        width: 60%
+    &--sub-title
+        @include subtitle
+    &--text
+        text-align: center
+        width: 100%!important
+        @include parrafos
+
+@media screen and ( min-width: 560px  )
+    .marcas
+        &--images
+            flex-direction: row
+        &--texture
+            bottom: -110px
+    .container-image
+        width: 50%
+
+@media screen and ( min-width: 769px  )
+    .marcas
+        &--texture
+            width: 15%
+            left: 0
+    .container-image
+        width: 33%
+
+/** Usuarios **/
+.usuarios
+    background-color: $primary-color
+    padding-top: 40px
+    &--title
+        text-align: center
+        @include title
+    &--contenedor
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 50px 0
+        @include centrar-contenedor
+    &--usuario
+        width: 50%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin: 20px 0
+        & img
+            border: 1px solid $white-color
+            border-radius: 50%
+            margin-bottom: 5px
+@media screen and ( min-width: 560px )
+    .usuarios
+        &--contenedor
+            flex-direction: row
+            flex-wrap: wrap
+@media screen and ( min-width: 769px )
+    .usuarios
+        &--usuario
+            width: 33%
+.paginador
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 20px 0 0
+    height: 37px
