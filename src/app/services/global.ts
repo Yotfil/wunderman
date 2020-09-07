@@ -1,3 +1,5 @@
+import { environment } from '../../environments/environment';
+
 export const GLOBAL = {
-  url: 'https://reqres.in/api',
+  url: environment.backend_url,
 };
